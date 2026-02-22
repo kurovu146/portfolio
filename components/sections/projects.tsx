@@ -78,6 +78,7 @@ export function Projects() {
                 <Card className="group flex h-full flex-col transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5">
                   <CardHeader>
                     <CardTitle className="text-lg group-hover:text-primary transition-colors">
+                      {project.icon && <span className="mr-2">{project.icon}</span>}
                       {project.title}
                     </CardTitle>
                     <CardDescription className="line-clamp-3">

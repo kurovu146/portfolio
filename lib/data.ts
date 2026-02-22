@@ -61,12 +61,12 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/kuro-vu",
+    url: "https://www.linkedin.com/in/kurovu146/",
     icon: SiLinkedin,
   },
   {
     name: "Facebook",
-    url: "https://facebook.com/ductuan1406",
+    url: "https://www.facebook.com/kurovu146",
     icon: SiFacebook,
   },
   {
@@ -131,6 +131,7 @@ export type ProjectCategory = "Full Stack" | "Frontend" | "Backend" | "Other";
 export interface Project {
   title: string;
   description: string;
+  icon?: string;
   image?: string;
   tags: string[];
   category: ProjectCategory;
@@ -140,7 +141,17 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "VNArena",
+    icon: "\u{1F3C6}",
+    description:
+      "Sports tournament organizer platform with 5 formats (single/double elimination, round-robin, Swiss, group stage), Elo ranking system, and payment integration.",
+    tags: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
+    category: "Full Stack",
+    githubUrl: "https://github.com/kurovu146/vnarena",
+  },
+  {
     title: "Baby Name Numerology",
+    icon: "\u{1F476}",
     description:
       "Vietnamese baby name suggestion tool based on Pythagorean numerology & Five Elements (Ngũ Hành). Analyzes 6 numerology indices, suggests compatible names, and supports name comparison.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
@@ -150,6 +161,7 @@ export const projects: Project[] = [
   },
   {
     title: "My Assistant",
+    icon: "\u{1F916}",
     description:
       "Personal AI-powered Telegram bot built with Claude Agent SDK. Features streaming responses, persistent memory, Gmail integration, web monitoring, and news digest.",
     tags: ["Bun", "TypeScript", "grammY", "Claude SDK", "SQLite"],
@@ -158,6 +170,7 @@ export const projects: Project[] = [
   },
   {
     title: "Genexus Tools",
+    icon: "\u{1F6E0}\u{FE0F}",
     description:
       "Internal developer tools to help low-code developers save time and improve productivity. Built for GMO-Z.com Runsystem JSC.",
     tags: ["NestJS", "ReactJS", "Prisma", "Supabase"],
@@ -166,13 +179,15 @@ export const projects: Project[] = [
   },
   {
     title: "Free To Earn",
+    icon: "\u{1F4B0}",
     description:
       "Freelance project with features including image upload, giftcode, missions, and Telegram chatbot integration.",
     tags: ["Node.js", "TypeScript", "PostgreSQL", "GraphQL", "Prisma", "Firebase"],
     category: "Full Stack",
   },
   {
-    title: "Tournament – Playcore",
+    title: "Tournament \u{2013} Playcore",
+    icon: "\u{1F3AE}",
     description:
       "Gaming tournament platform with Telegram chatbot, friend invites, missions, and real-time features. Built at Lucis Network.",
     tags: ["NestJS", "Redis", "GraphQL", "Prisma", "S3"],
@@ -180,6 +195,7 @@ export const projects: Project[] = [
   },
   {
     title: "Portfolio Website",
+    icon: "\u{1F468}\u200D\u{1F4BB}",
     description:
       "This portfolio website built with Next.js, Tailwind CSS, and Framer Motion with smooth animations and responsive design.",
     tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
@@ -209,12 +225,22 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     title: "Web Developer",
+    company: "G.U.Group, Inc.",
+    location: "Hanoi, Vietnam",
+    period: "Jan 2026 - Present",
+    description: [
+      "Developing web applications and services for the company",
+    ],
+    technologies: ["TypeScript", "React", "Next.js"],
+  },
+  {
+    title: "Web Developer",
     company: "GMO-Z.com RUNSYSTEM JSC",
     location: "Hanoi, Vietnam",
-    period: "Oct 2023 - Present",
+    period: "Oct 2023 - Dec 2025",
     description: [
       "Develop and maintain internal tools (Genexus Tools) to improve developer productivity",
-      "Build web applications including Huyndai Ev-Showroom and WeSmile platforms",
+      "Build web applications including Hyundai Ev-Showroom and WeSmile platforms",
       "Work with Chuseki low-code platform for rapid application development",
       "Collaborate in teams of 2–16 members across multiple projects",
     ],
