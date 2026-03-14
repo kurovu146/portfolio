@@ -1,6 +1,7 @@
 import {
   SiJavascript,
   SiTypescript,
+  SiRust,
   SiGo,
   SiReact,
   SiNextdotjs,
@@ -95,6 +96,7 @@ export const skills: Skill[] = [
   { name: "JavaScript", icon: SiJavascript, category: "Languages" },
   { name: "TypeScript", icon: SiTypescript, category: "Languages" },
   { name: "Go", icon: SiGo, category: "Languages" },
+  { name: "Rust", icon: SiRust, category: "Languages" },
   { name: "React", icon: SiReact, category: "Frontend" },
   { name: "Next.js", icon: SiNextdotjs, category: "Frontend" },
   { name: "Tailwind CSS", icon: SiTailwindcss, category: "Frontend" },
