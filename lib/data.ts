@@ -1,8 +1,6 @@
 import {
   SiJavascript,
   SiTypescript,
-  SiRust,
-  SiGo,
   SiReact,
   SiNextdotjs,
   SiNodedotjs,
@@ -36,13 +34,13 @@ export const personalInfo = {
   nickname: "KURO",
   email: "tuanvd14622@gmail.com",
   location: "Hanoi, Vietnam",
-  bio: `I'm a Web Developer with 4+ years of experience building scalable web applications using modern technologies. I specialize in TypeScript, React/Next.js, and Node.js/NestJS with expertise in GraphQL, RESTful APIs, and microservices. Passionate about game development with Go & Godot Engine, and building AI-powered tools.`,
+  bio: `I'm a Web Developer with 4+ years of experience building scalable web applications using modern technologies. I specialize in TypeScript, React/Next.js, and Node.js/NestJS with expertise in GraphQL, RESTful APIs, and microservices. Passionate about building AI-powered tools and open source projects.`,
   avatarUrl: "/images/avatar.webp",
   resumeUrl: "#",
   roles: [
     "Web Developer",
-    "TypeScript & Go Developer",
-    "Game Developer",
+    "Full Stack Developer",
+    "Open Source Contributor",
   ],
 };
 
@@ -95,8 +93,6 @@ export interface Skill {
 export const skills: Skill[] = [
   { name: "JavaScript", icon: SiJavascript, category: "Languages" },
   { name: "TypeScript", icon: SiTypescript, category: "Languages" },
-  { name: "Go", icon: SiGo, category: "Languages" },
-  { name: "Rust", icon: SiRust, category: "Languages" },
   { name: "React", icon: SiReact, category: "Frontend" },
   { name: "Next.js", icon: SiNextdotjs, category: "Frontend" },
   { name: "Tailwind CSS", icon: SiTailwindcss, category: "Frontend" },
@@ -150,6 +146,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
     category: "Full Stack",
     githubUrl: "https://github.com/kurovu146/vnarena",
+    liveUrl: "https://vnarena.vn",
   },
   {
     title: "Baby Name Numerology",
@@ -159,7 +156,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     category: "Full Stack",
     githubUrl: "https://github.com/kurovu146/baby-name-numerology",
-    liveUrl: "https://baby-name-numerology.vercel.app",
+    liveUrl: "https://datten-thansohoc.io.vn",
   },
   {
     title: "My Assistant",
@@ -169,15 +166,6 @@ export const projects: Project[] = [
     tags: ["Bun", "TypeScript", "grammY", "Claude SDK", "SQLite"],
     category: "Full Stack",
     githubUrl: "https://github.com/kurovu146/my-assistant",
-  },
-  {
-    title: "Genexus Tools",
-    icon: "\u{1F6E0}\u{FE0F}",
-    description:
-      "Internal developer tools to help low-code developers save time and improve productivity. Built for GMO-Z.com Runsystem JSC.",
-    tags: ["NestJS", "ReactJS", "Prisma", "Supabase"],
-    category: "Full Stack",
-    githubUrl: "https://github.com/kurovu146/GenexusTools",
   },
   {
     title: "Free To Earn",
