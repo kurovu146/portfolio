@@ -2,6 +2,8 @@ import {
   SiJavascript,
   SiTypescript,
   SiCplusplus,
+  SiRust,
+  SiGo,
   SiReact,
   SiNextdotjs,
   SiNodedotjs,
@@ -31,12 +33,12 @@ export const personalInfo = {
   nickname: "KURO",
   email: "kurovu146@gmail.com",
   location: "Vietnam",
-  bio: `I'm a passionate Software Developer with experience building web applications using modern technologies. I specialize in the MERN stack and love creating elegant, performant solutions to complex problems. As an open source contributor, I believe in the power of community-driven development.`,
+  bio: `I'm a Software Engineer passionate about building AI-powered tools, CLI utilities, and web applications. I work across TypeScript, Rust, and Go — from Telegram bots and MCP servers to game backends and terminal tools. I love turning ideas into open source projects that solve real problems.`,
   avatarUrl: "/images/avatar.webp",
   resumeUrl: "#",
   roles: [
-    "Software Developer",
-    "MERN Stack Developer",
+    "Software Engineer",
+    "Full Stack Developer",
     "Open Source Contributor",
   ],
 };
@@ -90,6 +92,8 @@ export interface Skill {
 export const skills: Skill[] = [
   { name: "JavaScript", icon: SiJavascript, category: "Languages" },
   { name: "TypeScript", icon: SiTypescript, category: "Languages" },
+  { name: "Rust", icon: SiRust, category: "Languages" },
+  { name: "Go", icon: SiGo, category: "Languages" },
   { name: "C++", icon: SiCplusplus, category: "Languages" },
   { name: "React", icon: SiReact, category: "Frontend" },
   { name: "Next.js", icon: SiNextdotjs, category: "Frontend" },
@@ -133,55 +137,52 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "E-Commerce Platform",
+    title: "My Assistant",
     description:
-      "A full-stack e-commerce platform with user authentication, product management, shopping cart, and payment integration using Stripe.",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      "Personal AI Telegram bot powered by Claude Agent SDK with streaming responses, persistent memory, Gmail/Google Sheets integration, web monitoring, and daily news digest.",
+    tags: ["TypeScript", "Bun", "Claude SDK", "SQLite"],
     category: "Full Stack",
-    githubUrl: "https://github.com/kurovu146",
-    liveUrl: "#",
+    githubUrl: "https://github.com/kurovu146/my-assistant",
   },
   {
-    title: "Task Management App",
+    title: "Free Agent",
     description:
-      "A collaborative task management application with real-time updates, drag-and-drop functionality, and team workspaces.",
-    tags: ["Next.js", "NestJS", "PostgreSQL", "WebSocket"],
+      "Lightweight Telegram AI bot built in Rust (~5-15MB RAM) with multi-provider support (Gemini, Groq, Mistral), smart key rotation, auto-fallback, and 19+ tools including web search and memory.",
+    tags: ["Rust", "SQLite", "Telegram", "LLM"],
     category: "Full Stack",
-    githubUrl: "https://github.com/kurovu146",
+    githubUrl: "https://github.com/kurovu146/free-agent",
   },
   {
-    title: "Social Media Dashboard",
+    title: "BasoTien",
     description:
-      "A responsive dashboard for managing multiple social media accounts with analytics, scheduling, and content management.",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
-    category: "Frontend",
-    githubUrl: "https://github.com/kurovu146",
-    liveUrl: "#",
+      "A 2D multiplayer xianxia MMORPG featuring Chinese cultivation mechanics, real-time combat, and server-authoritative architecture with Go backend and Godot client.",
+    tags: ["Go", "Godot", "PostgreSQL", "WebSocket"],
+    category: "Full Stack",
+    githubUrl: "https://github.com/kurovu146/basotien",
   },
   {
-    title: "REST API Service",
+    title: "Shellwise",
     description:
-      "A scalable RESTful API with authentication, rate limiting, caching, and comprehensive API documentation.",
-    tags: ["NestJS", "PostgreSQL", "Redis", "Swagger"],
+      "Smart command history with inline auto-suggest and fuzzy search for your terminal. Features frecency scoring, daemon mode for sub-millisecond latency, and zero-fork design.",
+    tags: ["TypeScript", "Bun", "Zsh", "CLI"],
     category: "Backend",
-    githubUrl: "https://github.com/kurovu146",
+    githubUrl: "https://github.com/kurovu146/shellwise",
   },
   {
-    title: "Chat Application",
+    title: "Bracket Engine",
     description:
-      "Real-time chat application with private messaging, group chats, file sharing, and read receipts.",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-    category: "Full Stack",
-    githubUrl: "https://github.com/kurovu146",
+      "Tournament bracket generation engine supporting single/double elimination, round-robin, Swiss system, and group stage. Published as an npm package.",
+    tags: ["TypeScript", "npm", "Algorithm"],
+    category: "Backend",
+    githubUrl: "https://github.com/kurovu146/bracket-engine",
   },
   {
-    title: "Portfolio Website",
+    title: "Claude Memory MCP",
     description:
-      "This portfolio website built with Next.js, Tailwind CSS, and Framer Motion with smooth animations and responsive design.",
-    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    category: "Frontend",
-    githubUrl: "https://github.com/kurovu146/portfolio",
-    liveUrl: "#",
+      "Long-term memory MCP server for Claude Code with SQLite FTS5 full-text search, BM25 ranking, upsert support, and categorized memory storage.",
+    tags: ["JavaScript", "SQLite", "MCP", "Claude Code"],
+    category: "Backend",
+    githubUrl: "https://github.com/kurovu146/claude-memory-mcp",
   },
 ];
 
@@ -205,7 +206,7 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    title: "Software Developer",
+    title: "Software Engineer",
     company: "Tech Company",
     location: "Vietnam",
     period: "2023 - Present",

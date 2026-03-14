@@ -5,14 +5,16 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kuro | Software Developer",
+  title: "Kuro | Software Engineer",
   description:
-    "Portfolio of Vu Duc Tuan (Kuro) - Software Developer, MERN Stack Developer, and Open Source Contributor.",
+    "Portfolio of Vu Duc Tuan (Kuro) - Software Engineer, Full Stack Developer, and Open Source Contributor.",
   keywords: [
     "Kuro",
     "Vu Duc Tuan",
-    "Software Developer",
-    "MERN Stack",
+    "Software Engineer",
+    "TypeScript",
+    "Rust",
+    "Go",
     "Portfolio",
   ],
 };
